@@ -55,8 +55,7 @@
                                                 type="checkbox" value="{{ $channelItem->id }}" />
                                         </div>
                                         <div class="div2">
-                                            <a @if ($channelItem->id == $channel->id) class="active" @endif
-                                                href="{{ route('channels.edit', $channelItem->id) }}">{{ $channelItem->name }}</a>
+                                            <a href="{{ route('channels.edit', $channelItem->id) }}">{{ $channelItem->name }}</a>
                                         </div>
                                         <div class="div3">{{ $channelItem->number }}</div>
                                         <div class="clear"><!-- --></div>
